@@ -1,0 +1,7 @@
+/.idea/
+/api/vendor/
+/api/var/
+/api/tests/data/
+.git
+.gitpe
+README.md

@@ -1,0 +1,2 @@
+p, r.sub.age > 18, /abac/write, POST
+p, r.sub.age < 60, /data2, write
