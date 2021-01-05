@@ -1,5 +1,5 @@
 #######################  INITIONs  ##########################
-init: down-clear api-clear pull build up composer-i api-wait-db api-migrate api-fixtures
+init: down-clear api-clear pull build up composer-i
 api-clear:
 	docker run --rm -v ${PWD}/api:/app -w /app alpine sh -c 'rm -rf var/*'
 api-permissions:

@@ -12,11 +12,28 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
+use CasbinAdapter\DBAL\Adapter as DatabaseAdapter;
+
 class AbacMiddleware implements MiddlewareInterface
 {
 
+//    public function __construct()
+//    {
+//    }
+
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
+//        $config = [
+//            'driver' => 'pdo_mysql',
+//            'host' => '127.0.0.1',
+//            'dbname' => 'test',
+//            'user' => 'root',
+//            'password' => '',
+//            'port' => '3306',
+//        ];
+//
+//        $adapter = DatabaseAdapter::newAdapter($config);
+
         $e = new Enforcer(__DIR__ . "/../../../model.conf", __DIR__ . "/../../../policy.csv");
 
         $subj = new User('Fred', 27);

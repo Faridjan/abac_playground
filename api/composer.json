@@ -11,6 +11,7 @@
     "ext-json": "*",
     "autokz/oauth_proxy": "^0.1.0",
     "casbin/casbin": "^3.1",
+    "casbin/dbal-adapter": "^2.1",
     "dflydev/fig-cookies": "^2.0",
     "doctrine/migrations": "^3.0",
     "doctrine/orm": "^2.8",

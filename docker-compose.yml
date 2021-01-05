@@ -5,7 +5,7 @@ services:
       context: gateway/docker
       dockerfile: development/nginx/Dockerfile
     ports:
-      - "8081:8080"
+      - "8082:8080"
     depends_on:
       - api
 
@@ -47,13 +47,13 @@ services:
       APP_ENV: dev
       APP_DEBUG: 1
 
-  api-postgres:
-    image: postgres:13.1-alpine
-    environment:
-      POSTGRES_USER: app
-      POSTGRES_PASSWORD: secret
-      POSTGRES_DB: app
-    volumes:
-      - /var/postgre:/var/lib/postgresql/data
-    ports:
-      - "54321:5432"
+#  api-postgres:
+#    image: postgres:13.1-alpine
+#    environment:
+#      POSTGRES_USER: app
+#      POSTGRES_PASSWORD: secret
+#      POSTGRES_DB: app
+#    volumes:
+#      - /var/postgre:/var/lib/postgresql/data
+#    ports:
+#      - "5432:5432"

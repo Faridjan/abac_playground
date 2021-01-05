@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2345e22b14c657c7c296e6f76bea220",
+    "content-hash": "4f3d4ea7fd553a03b699a25df5be0fbb",
     "packages": [
         {
             "name": "autokz/oauth_proxy",
@@ -220,6 +220,60 @@
                 }
             ],
             "time": "2020-12-24T07:07:41+00:00"
+        },
+        {
+            "name": "casbin/dbal-adapter",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-casbin/dbal-adapter.git",
+                "reference": "ca6f8188349e1542ba4083352f289286d501b6f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-casbin/dbal-adapter/zipball/ca6f8188349e1542ba4083352f289286d501b6f7",
+                "reference": "ca6f8188349e1542ba4083352f289286d501b6f7",
+                "shasum": ""
+            },
+            "require": {
+                "casbin/casbin": "^3.0",
+                "doctrine/dbal": "^2.9|^3.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "~7.0|~8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CasbinAdapter\\DBAL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "TechLee",
+                    "email": "techlee@qq.com"
+                }
+            ],
+            "description": "Database Abstraction Layer adapter for php-casbin. ",
+            "keywords": [
+                "acl",
+                "adapter",
+                "casbin",
+                "database",
+                "dbal",
+                "permission",
+                "rbac"
+            ],
+            "support": {
+                "issues": "https://github.com/php-casbin/dbal-adapter/issues",
+                "source": "https://github.com/php-casbin/dbal-adapter/tree/v2.1.0"
+            },
+            "time": "2020-12-21T00:37:57+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
